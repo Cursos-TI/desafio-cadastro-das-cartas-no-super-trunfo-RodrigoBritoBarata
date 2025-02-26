@@ -1,22 +1,59 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
+int main(){
+    int Populaçao, NPT; float PIB, Area; char Estado[50], CDC[50], nome[50];
 
-int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+    //Pergunta:
+    printf("Coloque o Código da carta: \n");
+    scanf("%s", &CDC);
+
+    //Resposta:
+    printf("\n Código da carta: %s \n", CDC);
+
+    //Pergunta:
+    printf("\n Coloque o Estado: \n");
+    scanf(" %s", &Estado);
+
+    //Resposta:
+    printf("\n Estado: %s \n", Estado);
+
+    //Pergunta:
+    printf("\n Coloque a Área: \n");
+    scanf("%f", &Area);
+
+    //Resposta:
+    printf("\n Área: %f km² \n", Area);
+
+    //Pergunta:
+    printf("\n Coloque o Número de pontos turísticos: \n");
+    scanf("%d", &NPT);
+
+    //Resposta:
+    printf("\n Número de pontos turísticos: %d \n", NPT);
+
+    //Pergunta:
+    printf("\n Coloque o PIB: \n");
+    scanf("%f", &PIB);
+
+    //Resposta:
+    printf("\n PIB: %f bilhões de reais \n", PIB);
+
+    //Pergunta:
+    printf("\n Coloque o Nome da Cidade: \n");
+    scanf("%s", &nome);
+
+    //Resposta:
+    printf("\n Nome da Cidade: %s \n", nome);
+
+    //Pergunta:
+    printf("\n Coloque a População: \n");
+    scanf("%d", &Populaçao);
+
+    //Resposta:
+    printf("\n População: %d \n", Populaçao);
+
+    //Resultado completo.
+    printf("\n Nome da cidade: %s \n Estado: %s \n Código da Carta: %s \n Área: %f km² \n PIB: %f bilhões de reais \n População: %d \n Número de pontos turísticos: %d \n", nome, Estado, CDC, Area, PIB, Populaçao, NPT);
 
     return 0;
 }
