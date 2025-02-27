@@ -128,8 +128,8 @@ int main(){
 
     //Soma Superpoder
 
-    SPoder = PIB + Area + PpC + DP + Populaçao + NPT;
-    SPoderb = PIBb + Areab + PpCb + DPb + Populaçaob + NPTb;
+    SPoder = PIB + Area + PpC + 1 / DP + Populaçao + NPT;
+    SPoderb = PIBb + Areab + PpCb + 1 / DPb + Populaçaob + NPTb;
 
     //Resultado completo.
     printf("\n Nome da cidade: %s \n Estado: %s \n Código da Carta: %s \n Área: %f km² (%d) \n PIB: %f bilhões de reais (%d) \n População: %d (%d) \n Número de pontos turísticos: %d (%d) \n PIB per Capital: %.2f (%d) \n Densidade Populacional: %.2f hab/km² (%d) \n Super Poder: %f (%d) \n", nome, Estado, CDC, Area, (Area > Areab), PIB, (PIB > PIBb), Populaçao, (Populaçao > Populaçaob), NPT, (NPT > NPTb), PpC, (PpC > PpCb), DP, (DP < DPb), SPoder, (SPoder > SPoderb));
