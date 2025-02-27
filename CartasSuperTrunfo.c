@@ -116,13 +116,13 @@ int main(){
 
     //Carta1 
 
-    PpC = PIB / Populaçao; //Por algum motivo só funciona se ambos os numeros tiverem o mesmo numero de casas.
+    PpC = PIB / Populaçao; //Por algum motivo só funciona se ambos os numeros tiverem a mesma quantidade de casas.
 
     DP = Populaçao / Area;
 
     //Carta 2
 
-    PpCb = PIBb / Populaçaob; ////Por algum motivo só funciona se ambos os numeros tiverem o mesmo numero de casas.
+    PpCb = PIBb / Populaçaob; ////Por algum motivo só funciona se ambos os numeros tiverem a mesma quantidade de casas.
 
     DPb = Populaçaob / Areab;
 
