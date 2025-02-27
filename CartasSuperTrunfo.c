@@ -5,7 +5,7 @@ int main(){
     //Valores.
 
     int Populaçao, NPT, Populaçaob, NPTb; 
-    float PIB, Area, PIBb, Areab, DP, PpC, DPb, PpCb;; 
+    float PIB, Area, PIBb, Areab, DP, PpC, DPb, PpCb, SPoder, SPoderb; 
     char Estado[50], CDC[50], nome[50], Estadob[50], CDCb[50], nomeb[50];
 
     //Cadastro da carta.
@@ -125,12 +125,34 @@ int main(){
     PpCb = PIBb / Populaçaob;
 
     DPb = Populaçaob / Areab;
-   
-    //Resultado completo.
-    printf("\n Nome da cidade: %s \n Estado: %s \n Código da Carta: %s \n Área: %f km² \n PIB: %f bilhões de reais \n População: %d \n Número de pontos turísticos: %d \n PIB per Capital: %.2f \n Densidade Populacional: %.2f hab/km² \n", nome, Estado, CDC, Area, PIB, Populaçao, NPT, PpC, DP);
+
+    //Soma Superpoder
+
+    SPoder = PIB + Area + PpC + DP + Populaçao + NPT;
+    SPoderb = PIBb + Areab + PpCb + DPb + Populaçaob + NPTb;
 
     //Resultado completo.
-    printf("\n Nome da cidade: %s \n Estado: %s \n Código da Carta: %s \n Área: %f km² \n PIB: %f bilhões de reais \n População: %d \n Número de pontos turísticos: %d \n PIB per Capita: %.2f \n Densidade Populacional: %.2f hab/km² \n", nomeb, Estadob, CDCb, Areab, PIBb, Populaçaob, NPTb, PpCb, DPb);
+    printf("\n Nome da cidade: %s \n Estado: %s \n Código da Carta: %s \n Área: %f km² \n PIB: %f bilhões de reais \n População: %d \n Número de pontos turísticos: %d \n PIB per Capital: %.2f \n Densidade Populacional: %.2f hab/km² \n Super Poder: %f \n", nome, Estado, CDC, Area, PIB, Populaçao, NPT, PpC, DP, SPoder);
+
+    //Resultado completo.
+    printf("\n Nome da cidade: %s \n Estado: %s \n Código da Carta: %s \n Área: %f km² \n PIB: %f bilhões de reais \n População: %d \n Número de pontos turísticos: %d \n PIB per Capita: %.2f \n Densidade Populacional: %.2f hab/km² \n Super Poder: %f \n", nomeb, Estadob, CDCb, Areab, PIBb, Populaçaob, NPTb, PpCb, DPb, SPoderb);
+
+    //Comparações entre os valores total dos produtos.
+
+    printf("\n População da Carta A é maior que a de Carta B? \n");
+        printf("\n Resultado: (%d): \n", Populaçao > Populaçaob);
+        printf("Area da Carta A é maior que a de Carta B? \n");
+        printf("\n resultado(%d): \n", Area > Areab);
+            printf("PIB da Carta A é maior que a de Carta B? \n");
+                printf("\n Resultado: (%d) \n", PIB > PIBb);
+                printf("Numero de Pontos turisticos da Carta A é maior que a de Carta B? \n");
+                    printf("\n Resultado: (%d) \n", NPT > NPTb);
+                    printf("Densidade Populacional da carta A de é menor que a de Carta B? \n");
+                        printf("\n Resultado: (%d) \n", DP < DPb);
+                        printf("PIB Per Capta de Carta A é maior que a de Carta B? \n");
+                            printf("\n Resultado: (%d) \n", PpC > PpCb);
+                                printf("Super Poder de Carta A é maior que a de Carta B?");
+                                    printf("\n Resultado: (%d) \n", SPoder > SPoderb);
 
 
     return 0;
