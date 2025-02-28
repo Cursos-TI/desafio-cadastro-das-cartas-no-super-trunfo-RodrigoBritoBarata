@@ -116,13 +116,13 @@ int main(){
 
     //Carta1 
 
-    PpC = PIB / Populaçao; //Por algum motivo só funciona se ambos os numeros tiverem a mesma quantidade de casas decimais.
+    PpC = PIB / Populaçao;
 
     DP = Populaçao / Area;
 
     //Carta 2
 
-    PpCb = PIBb / Populaçaob; ////Por algum motivo só funciona se ambos os numeros tiverem a mesma quantidade de casas decimais.
+    PpCb = PIBb / Populaçaob;
 
     DPb = Populaçaob / Areab;
 
@@ -132,10 +132,10 @@ int main(){
     SPoderb = PIBb + Areab + PpCb + 1 / DPb + Populaçaob + NPTb;
 
     //Resultado completo.
-    printf("\n Nome da cidade: %s \n Estado: %s \n Código da Carta: %s \n Área: %f km² (%d) \n PIB: %f bilhões de reais (%d) \n População: %d (%d) \n Número de pontos turísticos: %d (%d) \n PIB per Capital: %.2f (%d) \n Densidade Populacional: %.2f hab/km² (%d) \n Super Poder: %f (%d) \n", nome, Estado, CDC, Area, (Area > Areab), PIB, (PIB > PIBb), Populaçao, (Populaçao > Populaçaob), NPT, (NPT > NPTb), PpC, (PpC > PpCb), DP, (DP < DPb), SPoder, (SPoder > SPoderb));
+    printf("\n Nome da cidade: %s \n Estado: %s \n Código da Carta: %s \n Área: %f km² (%d) \n PIB: %f bilhões de reais (%d) \n População: %d (%d) \n Número de pontos turísticos: %d (%d) \n PIB per Capital: %.2f (%d) \n Densidade Populacional: %.2f hab/km² (%f) \n Super Poder: %f (%d) \n", nome, Estado, CDC, Area, (Area > Areab), PIB, (PIB > PIBb), Populaçao, (Populaçao > Populaçaob), NPT, (NPT > NPTb), PpC, (PpC > PpCb), DP, (DP < DPb), SPoder, (SPoder > SPoderb));
 
     //Resultado completo.
-    printf("\n Nome da cidade: %s \n Estado: %s \n Código da Carta: %s \n Área: %f km² (%d) \n PIB: %f bilhões de reais (%d) \n População: %d (%d) \n Número de pontos turísticos: %d (%d) \n PIB per Capita: %.2f (%d) \n Densidade Populacional: %.2f hab/km² (%d) \n Super Poder: %f (%d) \n", nomeb, Estadob, CDCb, Areab, (Areab > Area), PIBb, (PIBb > PIB), Populaçaob, (Populaçaob > Populaçao), NPTb, (NPTb > NPT), PpCb, (PpCb > PpC), DPb, (DPb < DP), SPoderb, (SPoderb > SPoder));
+    printf("\n Nome da cidade: %s \n Estado: %s \n Código da Carta: %s \n Área: %f km² (%d) \n PIB: %f bilhões de reais (%d) \n População: %d (%d) \n Número de pontos turísticos: %d (%d) \n PIB per Capita: %.2f (%d) \n Densidade Populacional: %.2f hab/km² (%f) \n Super Poder: %f (%d) \n", nomeb, Estadob, CDCb, Areab, (Areab > Area), PIBb, (PIBb > PIB), Populaçaob, (Populaçaob > Populaçao), NPTb, (NPTb > NPT), PpCb, (PpCb > PpC), DPb, (DPb < DP), SPoderb, (SPoderb > SPoder));
 
     return 0;
 }
